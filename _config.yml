@@ -1,0 +1,5 @@
+title: "Agentic Engineering: The Course"
+description: A self-paced course on becoming an Agentic Engineer.
+repository: Skarlso/ai-upskilling-course-material
+# kramdown turns the "Back | Previous | Next" lines into tables, GFM matches github.com
+markdown: GFM

@@ -139,6 +139,9 @@ templates/
   threat-model.md
   project-spec.md
 toy-repo/              shared Go repo for the verification modules
+_config.yml            website config (GitHub Pages)
+_layouts/default.html  website page layout
+assets/style.css       website styling
 ```
 
 Your agent lives in your own repo.

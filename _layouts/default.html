@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  {%- assign repo_url = "https://github.com/" | append: site.repository -%}
+  {%- assign page_name = page.title | default: page.path -%}
+  {%- assign feedback_title = "Feedback: " | append: page_name | url_encode -%}
+  {%- assign feedback_url = repo_url | append: "/issues/new?title=" | append: feedback_title -%}
+  {%- assign modules = site.pages | where_exp: "p", "p.path contains 'modules/'" | sort: "path" -%}
+
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      <svg class="loop" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+      {{ site.title | escape }}
+    </a>
+    <nav aria-label="GitHub">
+      <a href="{{ repo_url }}">GitHub</a>
+      <a href="{{ feedback_url }}">Feedback</a>
+    </nav>
+  </header>
+
+  <div class="page">
+    <nav class="sidebar" aria-label="Course">
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>Overview</a>
+      <ul>
+        {%- for m in modules %}
+        {%- assign prefix = m.title | split: ": " | first | append: ": " %}
+        <li><a href="{{ m.url | relative_url }}"{% if m.url == page.url %} aria-current="page"{% endif %}>{{ m.title | remove_first: prefix | escape }}</a></li>
+        {%- endfor %}
+      </ul>
+      <a href="{{ '/project/' | relative_url }}"{% if page.url == "/project/" %} aria-current="page"{% endif %}>Final project</a>
+    </nav>
+
+    <main>
+      {{ content }}
+      {%- assign body = content | strip -%}
+      {%- if body == "" %}
+      <p class="empty">This page is still being written. Check back soon!</p>
+      {%- endif %}
+
+      <footer>
+        Spotted a mistake or have an idea?
+        <a href="{{ feedback_url }}">Open an issue</a> or
+        <a href="{{ repo_url }}/edit/main/{{ page.path }}">edit this page</a> on GitHub.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
