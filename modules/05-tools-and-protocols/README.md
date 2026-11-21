@@ -2,7 +2,7 @@
 
 [Back to the course](../../README.md) | Previous: [Harness engineering](../04-harness-engineering/README.md) | Next: [Verification, part 1](../06-verification-part-1/README.md)
 
-Okay, now, we are going to expose/export/excavate your tools from your agent.
+Okay, in the previous modules the tools were part of the agent. That works, but now, we want tools that you can share or give to multiple agents.
 
 That is the job of the Model Context Protocol. You write a server that offers tools, and any client that understands the language of the MCP will be able to use them. Your agent, commercial agents, whatever comes next year.
 

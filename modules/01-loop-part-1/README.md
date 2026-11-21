@@ -25,7 +25,7 @@ Two things to notice while you do this:
 - The model remembers _nothing_. You send the entire conversation _always_. The "memory" is nothing but a slice in your program.
 - The model never runs anything. It only _asks_. After that, it's your code's job to decide what happens next.
 
-The post uses a provider API but any model will do, even a local one.
+The post uses a provider API but any model with tool calling, even a local one.
 
 ## Done when
 

@@ -4,7 +4,7 @@
 
 An agent does what a text tells it to do. _ANY_ text.
 
-I'll say it again. _ANY_ text. _Anything_ it reads _anywhere_ that has instructions in it, it will follow.
+I'll say it again. _ANY_ text. _Anything_ it reads _anywhere_ that has instructions in it, it MAY follow. You can't predict when it will follow it or not.
 
 Your prompt. A README. A web page fetch. An issue somebody created. The model can't reliably tell _your_ instructions from any other instructions that it found during a crawl. This is called _prompt injection_.
 
@@ -15,7 +15,7 @@ Simon Willison names this problem the lethal trifecta:
 - exposure to untrusted content
 - a way to send data out
 
-Take away one of these and you stopped the injection from working.
+Take away one of these away and your stopped the theft. Though be aware, that your did not stop the injection!
 
 **Throwaway repo. Throwaway credentials. For this whole module.**
 

@@ -23,7 +23,7 @@ Step 4 IS important. Please do NOT skip it. It's important to understand problem
 
 ## Done when
 
-You know your agent's top two failure types and you understand the difference between what it can do and what it can't.
+You know your agent's top two failure types and you understand the difference between what it can do and what it can't. You should see differences between the test scores! That's your measurable failure rate.
 
 ## Discuss
 
