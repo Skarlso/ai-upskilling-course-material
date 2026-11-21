@@ -94,6 +94,7 @@ The done-when line is the minimum. Everything past that is optional.
 | 8 | [Security and sandboxing](modules/08-security-and-sandboxing/README.md) | A sandboxed shell tool and a one-page threat model |
 | 9 | [System design](modules/09-system-design/README.md) | Budget caps and a human approval step |
 | | [Final project](project/README.md) | Issue in, pull request out |
+| | [The fundamentals](fundamentals/README.md) | The skills underneath, as a reading list |
 
 ### Doing it together
 
@@ -110,7 +111,7 @@ People will progress at different paces, but there are things that make being in
 
 The pull request contains the plan, the result, a holdout scenario score and how much it cost. Then, a human reviews it and decides if it can be merged. If not, the process is continued.
 
-There are two alternative tracks, a harness study and a tool study, if your daily work points elsewhere. The full brief is in [`project/README.md`](project/README.md).
+There are two alternative tracks, a harness study and a tool study, if you are busy. The full brief is in [`project/README.md`](project/README.md).
 
 ## Safety
 
@@ -145,6 +146,10 @@ assets/style.css       website styling
 ```
 
 Your agent lives in your own repo.
+
+## Fundamentals
+
+I also added a list of skills you should do a refresher on! These are the ones that are most important now... Distributed Systems, System Thinking, Observability practices, and a lot more. You can find these under [Fundamentals README](./fundamentals/README.md).
 
 ## Credits
 

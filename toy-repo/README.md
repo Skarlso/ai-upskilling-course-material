@@ -5,7 +5,7 @@
 *Generated*: This is a generated toy application that you can use for testing purposes.
 It was a supervised generation process and contains a few things to look through.
 
-Feel free to use it, or ignore it at your behest. It is there so group projects work on the SAME REPOSITORY! So you can compare results.
+Feel free to use it, or ignore it at your leisure. It is there so group projects work on the SAME REPOSITORY! So you can compare results.
 
 `pantry/` is a small Go program that keeps track of what is in a kitchen. This is for your agent to work on in [module 6](../modules/06-verification-part-1/README.md), [module 7](../modules/07-verification-part-2/README.md) and the [final project](../project/README.md).
 
@@ -54,7 +54,7 @@ Agents should work on their own copy:
 3. Check.
 4. Delete.
 
-A fresh copy every time is what makes multiple runs comparable. The things, and an examples you can run right now, are in [`tasks/`](tasks/README.md).
+A fresh copy every time is what makes multiple runs comparable. The tasks, and an example you can run right now, are in [`tasks/`](tasks/README.md).
 
 ## Can I use my own repo instead?
 

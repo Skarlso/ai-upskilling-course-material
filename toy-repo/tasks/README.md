@@ -10,7 +10,7 @@ Agent tasks. Each with three things:
 | `setup/` | Copy of files in pantry. Optional. |
 | `check.sh` | Takes the path to the working copy. Exits 0 when the job is done. |
 
-Agent only ever sees its copy and never this folder!
+The agent only ever sees its copy and never this folder!
 
 ## One run steps
 

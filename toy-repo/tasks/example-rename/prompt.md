@@ -5,7 +5,7 @@ People make typos when they add things, and today the only fix is to remove the 
 What it should do:
 
 - `Store` gets a method `Rename(oldName, newName string) error`.
-- Names are normalized the same way everywhere else in the store, so case and extra spaces don't matter.
+- Names are normalized the same way as everywhere else in the store, so case and extra spaces don't matter.
 - Renaming an item that is not in the store returns `ErrNotFound`.
 - Renaming onto a name that already exists adds the two quantities together, as long as both are kept in the same unit. If the units differ it returns `ErrUnitMismatch` and nothing changes.
 - Renaming an item to the name it already has changes nothing and is not an error.
